@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Shadows+Into+Light&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karma", serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background-color: #ffffff;
+  font-size: 24px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+  z-index: 1;
+  box-shadow: 0 0 10px #ffffff;
+  margin-bottom: 10px;
+}
+nav > i.fas {
+  padding: 10px;
+  font-size: 24px;
+}
+nav > i.fas:hover {
+  background-color: #cccccc;
+}
+
+main {
+  padding: 8px 16px;
+  margin-top: 100px;
+}
+div.conatiner-1,
+div.container-2 {
+  padding: 16px 8px;
+  display: flex;
+  gap: 18px;
+}
+div.conatiner-1 > div > figure > img,
+div.container-2 > div > figure > img {
+  width: 100%;
+  max-width: 536px;
+}
+div.conatiner-1 > div,
+div.container-2 > div {
+  width: 100%;
+  max-width: 536px;
+  text-align: center;
+}
+div.container-3 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding: 32px 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+div.container-3 > div {
+  padding: 8px 16px;
+}
+div.container-3 > div.box-2 {
+  background-color: black;
+  color: white;
+}
+div.container-3 > div:hover {
+  background-color: black;
+  color: white;
+}
+main > article {
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main > article > h3 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+main > article > figure > img {
+  width: 100%;
+  max-width: 800px;
+}
+main > article > figcaption {
+  padding: 32px 0;
+}
+main > article > figcaption > p.par-1 {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+main > article > figcaption > p.par-2 {
+  margin: 10px 0;
+}
+main > article > figcaption > p.par-3 {
+  margin: 15px 0;
+  font-size: 15px;
+}
+main > footer {
+  display: flex;
+  padding: 32px 8px;
+  justify-content: space-evenly;
+}
+main > footer > div {
+  width: 100%;
+  max-width: 580px;
+  padding: 0 8px;
+}
+main > footer > div > h3 {
+  font-size: 24px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+main > footer > div > p {
+  margin: 10px 0;
+}
+main > footer > div.box-1 > p > a {
+  text-decoration: none;
+  color: black;
+  font-family: "Shadows Into Light", cursive;
+}
+main > footer > div.box-2 > figure {
+  display: flex;
+  gap: 10px;
+  padding: 16px;
+}
+main > footer > div.box-2 > figure:hover {
+  background-color: #cccccc;
+}
+main > footer > div.box-2 > figure > img {
+  height: 50px;
+  width: 50px;
+}
+main > footer > div.box-3 > div.box-3-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 5px;
+  color: white;
+}
+main > footer > div.box-3 > div.box-3-container > span {
+  background-color: #616161;
+  font-size: 12px;
+  padding: 2px 8px 0 8px;
+}
+main > footer > div.box-3 > div.box-3-container > span.active {
+  background-color: black;
+}
+@media screen and (max-width: 600px) {
+  div.conatiner-1,
+  div.container-2 {
+    flex-direction: column;
+  }
+  main > footer {
+    flex-direction: column;
+  }
+}
